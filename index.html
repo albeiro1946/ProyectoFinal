@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Final Lista de Productos</title>
+    <script type="text/javascript" src="./Frontend/script.js"></script>
+    <link rel="stylesheet" href="./Frontend/diseño.css">
+</head>
+<body>
+    
+    <header>
+        <h1>SmartWare Store</h1>
+        
+          <!-- Menú de navegación -->
+          <nav class="nav-menu">
+            <a href="index.html" class="menu-item">
+                <img src="./img/home.png" alt="Home">
+                Inicio
+            </a>
+            <a href="1portatiles.html" class="menu-item">
+                <img src="./img/portatiles_blue.png" alt="Portátiles">
+                Portátiles
+            </a>
+            <a href="pcs.html" class="menu-item">
+                <img src="./img/pcs_blue.png" alt="PC's">
+                PC's
+            </a>
+            <a href="gaming.html" class="menu-item">
+                <img src="./img/gaming_blue.png" alt="Gaming">
+                Gaming
+            </a>
+            <a href="accesorios.html" class="menu-item">
+                <img src="./img/accesorios_blue.png" alt="Accesorios">
+                Accesorios
+            </a>
+            <a href="impresoras.html" class="menu-item">
+                <img src="./img/impresoras_blue.png" alt="Impresoras">
+                Impresoras
+            </a>
+
+            <sectiont class="filtro">
+                <label for="criterio">Filtrar productos</label>
+                <input type="text" id="criterio" placeholder="Escribe el Nombre del Codigo">
+                <button onclick="cargar()">Buscar</button>
+                <button onclick="limpiar()">Limpiar</button>
+            </sectiont>
+        </nav>
+    </header>
+    
+    <main>
+        <h2>Lista de Productos</h2>
+        
+        <div class="filtro">
+            <label for="criterio">Filtrar:</label>
+            <input type="text" id="criterio" placeholder="Nombre o Código">
+            <button onclick="cargar()">Aceptar</button>
+            <button onclick="limpiar()">Cancelar</button>
+        </div>
+
+        <section id="resultado" class="productos-grid"></section>
+        <aside id="carrito" class="carrito">
+            <h2>Carrito de Compras</h2>
+            <p>El carrito está vacío.</p>
+        </aside>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Proyecto Final. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
